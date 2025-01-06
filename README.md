@@ -1,15 +1,8 @@
-# usage
+# anthropic-api-usage
 
-To install dependencies:
+check your anthropic api usage
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.1.30. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+1. interceipt the request, chrome devtools -> network -> find the xhr/fetch request -> right click -> copy -> copy as fetch (node.js)
+2. pass in the `requestInit` in `./request.ts` and run the script, it will page through the usage
+3. `cp ./res.json ./usage_data.json` to save the output
+4. Run the `usage.ipynb` notebook to visualize
